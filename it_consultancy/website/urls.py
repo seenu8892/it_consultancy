@@ -16,7 +16,7 @@ router.register(r'testimonials', TestimonialViewSet)
 router.register(r'team-members', TeamMemberViewSet)
 router.register(r'services', ServiceViewSet)
 router.register(r'case-studies', CaseStudyViewSet)
-router.register(r'blog-posts', BlogPostViewSet)
+router.register(r'blog-posts', BlogPostViewSet) 
 router.register(r'job-openings', JobOpeningViewSet)
 router.register(r'company-info', CompanyInfoViewSet)
 
