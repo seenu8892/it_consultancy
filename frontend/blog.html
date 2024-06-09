@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        #my-blog a{
+            text-align: right;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* blog--------------------- */
+        #blog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .blog-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .blog-heading span{
+            color: red;
+        }
+        .blog-heading h2{
+            font-size: 2.4rem;
+            color: #2b2b2b;
+            font-weight: 600;
+            
+        }
+        .blog-continer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            flex-wrap: wrap;
+        }
+        .blog-box{
+            width: 350px;
+            background-color: #ffffff;
+            border: 1px solid #ececec;
+            margin: 20px;
+        }
+        .blog-img{
+            width: 100%;
+            height: auto;
+        }
+        .blog-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center; 
+        }
+        .blog-text{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-box span{
+            color: #f33c3c;
+            font-size: 0.9rem;
+        }
+        .blog-text .blog-title{
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #272727;
+        }
+        .blog-text .blog-title:hover{
+            color: #f33c3c;
+            transition: all ease 0.3s;
+        }
+        .blog-text p{
+            color: #9b9b9b;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 20px 0px;
+        }
+        .blog-text a{
+            color: #0f0f0f;
+        }
+        .blog-text a:hover{
+            color: #f33c3c;
+            transition: all ease 0.3s;
+        }
+        @media(max-width:1250px){
+            .blog-box{
+                width: 300px;
+            }
+        }
+        @media(max-width:1100px){
+            .blog-box{
+                width: 70%;
+            }
+        }
+        .my-blog{
+            margin-left: 80%;
+            color: white;
+        }
+        /* .my-blog a{
+            color: white ;
+        } */
+        button {
+            padding: 8px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease; /* Adding transition for smooth effect */
+        }
+
+        button:hover {
+            background-color: rgb(146, 146, 146); /* Change the background color on hover */
+        }
+
+        /* nav */
+        #division {
+            color: white;
+            height: 50px;
+            background-color: #0f1111;
+
+        }
+
+        #move {
+            /* border: 1px solid white;   */
+            margin-top: 15px;
+            margin-left: 60px;
+        }
+
+        .button {
+            /* background-color: #fc9917; */
+            height: 30px;
+            width: 10%;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+
+        #logo {
+            color: #f08804;
+        }
+
+        a {
+            margin-right: 120px;
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="division">
+        <a id="logo">It-consultancy</a>
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="findyourjob.html">job-openings</a>
+        <a href="career.html">Careers</a>
+        <a href="about_us.html">About us</a>
+        
+        <!-- <a href="login.html">Login</a>
+        <a href="signup.html">Sign up</a> -->
+    </div>
+        <hr>
+    <!-- blog-section --------> 
+    <section id="blog">
+        <!-- heading------ -->
+        <div class="blog-heading">
+           <span>M Recent Posts</span>
+           <h2>My Blog</h2>
+        </div>
+        <div class="my-blog">
+            <a href="dashboard.html"><button>Create Blog</button></a>
+            </div>
+        <div class="blog-continer">
+            <!-- box1------- -->
+            <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="img/adventure-trip-travel.jpg" alt="Travel Blog">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <span>4 JUNE 2024/ Web Design</span>
+                    <a href="" class="blog-title">“To Travel is to Live.”</a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda dignissimos, vitae esse porro consectetur molestias odio quos repudiandae culpa est ab repellendus. Nisi dicta inventore asperiores alias aut, tempore itaque?</p>
+                    <a href="https://www.inditales.com/">Read More</a>
+                </div>
+            </div>
+
+             <!-- box2------- -->
+             <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="img/food blog2.jpg" alt="Travel Blog">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <span>4 JUNE  2024/ Web Design</span>
+                    <a href="" class="blog-title">"People who love to eat are always the best people."</a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda dignissimos, vitae esse porro consectetur molestias odio quos repudiandae culpa est ab repellendus. Nisi dicta inventore asperiores alias aut, tempore itaque?</p>
+                    <a href="https://echovme.in/blog/best-indian-food-blogs/">Read More</a>
+                </div>
+            </div>
+
+             <!-- box3------- -->
+             <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="img/cyber blog3.jpg" alt="Travel Blog">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <span>5 JUNE  2024/ Web Design</span>
+                    <a href="" class="blog-title">. “Cyber-Security is much more than a matter of IT.”</a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda dignissimos, vitae esse porro consectetur molestias odio quos repudiandae culpa est ab repellendus. Nisi dicta inventore asperiores alias aut, tempore itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis voluptatem suscipit reiciendis, a alias, aut voluptatum impedit doloribus fugit in expedita dignissimos facere ea, delectus ducimus magnam rem quasi.</p>
+                    <a href="https://heimdalsecurity.com/blog/best-cyber-security-blogs/">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-continer" id="blog-container">
+            <!-- Static blog post examples here -->
+        </div>
+    </section>
+
+    <script>
+        function fetchPosts() {
+            fetch('http://127.0.0.1:8000/blog-posts/')
+                .then(response => response.json())
+                .then(data => {
+                    const blogContainer = document.getElementById('blog-container');
+
+                    data.forEach(post => {
+                        const blogBox = document.createElement('div');
+                        blogBox.className = 'blog-box';
+
+                        const blogImg = document.createElement('div');
+                        blogImg.className = 'blog-img';
+                        const img = document.createElement('img');
+                        img.src = 'img/blog and news.jpg';  // Specified image path
+                        blogImg.appendChild(img);
+
+                        const blogText = document.createElement('div');
+                        blogText.className = 'blog-text';
+
+                        const span = document.createElement('span');
+                        span.textContent = `${new Date(post.date_posted).toLocaleDateString()} / ${post.category}`;
+                        blogText.appendChild(span);
+
+                        const titleLink = document.createElement('a');
+                        titleLink.className = 'blog-title';
+                        titleLink.href = '#';  // Link to the full post
+                        titleLink.textContent = post.title;
+                        blogText.appendChild(titleLink);
+
+                        const p = document.createElement('p');
+                        p.textContent = post.content;
+                        blogText.appendChild(p);
+
+                        const readMoreLink = document.createElement('a');
+                        readMoreLink.href = '#';  // Link to the full post
+                        readMoreLink.textContent = 'Read More';
+                        blogText.appendChild(readMoreLink);
+
+                        blogBox.appendChild(blogImg);
+                        blogBox.appendChild(blogText);
+
+                        blogContainer.appendChild(blogBox);
+                    });
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        }
+
+        // Fetch posts on initial load
+        document.addEventListener('DOMContentLoaded', fetchPosts);
+    </script>
+</body>
+</html>
+

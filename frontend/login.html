@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(224, 220, 211);
+}
+
+/* .login{
+    background-color: rgb(50, 190, 190);
+    margin-top: 15%;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10%;    
+}
+
+label, input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#login-message, #signup-message {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login">
+    <form id="login-form" action="dashboard.html">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <a href="dashboard.html"><button type="">Login</button></a>
+        <p id="login-message"></p>
+    </form>
+</div>
+  </body>
+</html>

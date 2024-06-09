@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your job</title>
+    <link rel="stylesheet" href="">
+    <style>
+        header {
+            background-color: #002B5B;
+            color: white;
+            padding: 1em 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+        }
+
+        nav .btn {
+            margin-right: 0;
+        }
+
+        nav .btn a {
+            color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* blog--------------------- */
+        #blog {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .blog-heading span {
+            color: blue;
+        }
+
+        .blog-heading h2 {
+            font-size: 2.4rem;
+            color: #2b2b2b;
+            font-weight: 600;
+        }
+
+        .blog-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .blog-box {
+            width: 350px;
+            background-color: hsla(0, 0%, 81%, 0.833);
+            border: 1px solid #ececec;
+            margin: 20px;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 250px;
+        }
+
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .blog-text {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-box span {
+            color: #f33c3c;
+            font-size: 0.9rem;
+        }
+
+        .blog-text .blog-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #272727;
+        }
+
+        .blog-text .blog-title:hover {
+            color: #0c0a0a;
+            transition: all ease 0.3s;
+        }
+
+        .blog-text p {
+            color: #0c0404;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 20px 0;
+        }
+
+        .blog-text a {
+            color: white;
+            width: 45%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            background-color: #007BFF;
+            text-align: center;
+        }
+
+        .blog-text a:hover {
+            color: #130f0f;
+            transition: all ease 0.3s;
+        }
+
+        @media (max-width: 1250px) {
+            .blog-box {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .blog-box {
+                width: 70%;
+            }
+        }
+
+        footer {
+            background-color: #002B5B;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* Container to center the form */
+        .container {
+            width: 120%;
+            background-color: rgba(216, 211, 211, 0.755);
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-right: 100px;
+        }
+
+        .form-group {
+            margin-bottom: 0em;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75em;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        body {
+            background-image: url('assests/images/blogbg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        #division {
+            color: white;
+            height: 50px;
+            background-color: #0f1111;
+
+        }
+
+        #move {
+            /* border: 1px solid white;   */
+            margin-top: 15px;
+            margin-left: 60px;
+        }
+
+        .button {
+            /* background-color: #fc9917; */
+            height: 30px;
+            width: 10%;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+
+        #logo {
+            color: #f08804;
+        }
+
+        a {
+            margin-right: 120px;
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="division">
+        <a id="logo">It-consultancy</a>
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="findyourjob.html">job-openings</a>
+        <a href="career.html">Careers</a>
+        <a href="about_us.html">About us</a>
+        
+        <!-- <a href="login.html">Login</a>
+        <a href="signup.html">Sign up</a> -->
+    </div>
+        <hr>
+    <header>
+
+        <h2>FIND YOUR CAREER</h2>
+    </header>
+    <!-- blog-section -------->
+    <section id="blog">
+        <nav>
+            <div class="btn">
+                <a href="job.html"><button>Add New JobPost</button></a>
+            </div>
+        </nav>
+        <!-- heading------ -->
+        <div class="blog-heading">
+        </div>
+
+        <div class="blog-container">
+            <!-- box1------- -->
+            <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="img/findjob1.jpg">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <p class="blog-title">"Mastering the Digital Realm: Unveiling the Role of a Web Developer in IT
+                        Consultancy"</p>
+                    <p>Explore the intricate fusion of coding expertise, creativity, and problem-solving acumen that
+                        defines the essence of web development in the consultancy sphere. Join us on a journey through
+                        the virtual corridors of innovation, where every line of code weaves the fabric of tomorrow's
+                        digital experiences.</p>
+                    <a href="https://www.cssfounder.com/website-design-company-in-bangalore/?gad_source=1&gclid=CjwKCAjwmYCzBhA6EiwAxFwfgMxo8HUBiANHTQ6FM9UPcngekLdEACRSbMsvx8U9leg6cz2RIYfeAxoCfDoQAvD_BwE">Read
+                        More</a>
+                </div>
+            </div>
+
+            <!-- box2------- -->
+            <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="img/findjob3.jpg">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <p class="blog-title">"Mastering the Art of Cloud Architecture: The Role of a Cloud Architect"</p>
+                    <p>Explore the vital contributions of cloud architects in driving innovation and empowering
+                        organizations to thrive in the digital age. Whether you're aspiring to become a cloud architect
+                        or seeking insights to enhance your skills, our blog is your gateway to mastering the art of
+                        cloud architecture.</p>
+                    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjR3-nVm8SGAxXQFIMDHaNrBYEYABADGgJzZg&ase=3&agsac=pl602baX95U&gclid=CjwKCAjwmYCzBhA6EiwAxFwfgCGYp7fAWyG0O2lVBgHP9_nKlccUfXSACadhpXnpiCR3vmF_eE1KjRoC9N8QAvD_BwE&cit=CkUKCQjwmYCzBhCRARI0AJPqn8oQru3OYyp-IZqY4jA7NpX_ZY3jCHSuQ-wBs6xT0yxDmPCozbq1wbxY38SgBMMsaRoCFhTw_wcB&ei=zThgZtfQDLaD4-EPub3GeQ&ohost=www.google.com&cid=CAESwwHg9sJkz0tnCYcjkgse7hqpHvgqBFjFL-KEzBRvcwJqPBwp5TXxBU_KkqPGXpvtdqbpejswz-wxbbjZPGOIPqUgP6I31Og2ZOt4jzT-B3nxpp7JsoV-hdc7UnCSYOuPtx0CEae47FQ-3ugzyabhmuRciSjJf6wb5cEJAvnSu5YRzM_UhYqEBztedYTJlD1zmhbCWJhv5f7VSN1Md-5MJTWRCRY0YmsHRJhS92HNOCGlbNFmgtyuFycE1NmT6q_Nq98LszI&sig=AOD64_1KmM3yXOzW8yaDFWfpPv5EIH0uIg&q&sqi=2&adurl&ved=2ahUKEwiX6-TVm8SGAxW2wTgGHbmeMQ8Q0Qx6BAgGEAE&ms=CoAC44beHEmUGigwdyFTCEO_gerwLM9wLOOlf3WjiTtMAdFRhn_ZjBM6fI6vIYtRkj_-YjkINNlgJYVvVGN9mF_og0AE-xFbl1ti_Sx-25iEHSka7HC-yv4Z0VdOV67VbxHuphcxtwOrA3RTJdV5GWjJIrSoSXzYIt5SdzDmHddFJPSbQb_BwwP3qclraa3Xh4K9568kzvh4ddoJ-1DJ3W9oqP4_8NePGPKKjg-Tkp45Sok3-mVlI-i40Emt6gmtcdDphn45RhTcxChD2AiiZKCLzFRKQsrIeJyAl5D3tQ4R0BYmKspM0d2BvXZiVcWhQOmq412xSbv0bSWf6QdGTHkESAqAApEwYh5HRIMZ7tYrrXbpcchGXd9h7Q1-tRn1RdmjFWhahKcHuebhaHpOo7jNjsjUODBFwmVIvHpKwWvLMdCoMCmH45hYcsZSNmwXmuAVzNU7Ah2fcfd6NnjZMMDaz4TMDhLRyajNFO1B6b69K2Lh9UAK9QkQr0MM9Q7pmbSeiGLrjKJzzZPpdHbDfbJBgHg3txwb1UyWufOoJ4luIWzo-5pZ1PF6GZRLY2PhNxgkxAo7xH_ML6eljzZtnB7TYVitdGmuIIHzIFx3kyt9CMWwzF-fYtrSzvG1C95XDjS-DU-JAMpBy5pcFVvb2Zn948qSrRi1cP56VNxde-zD9k0d1vkSEC-yiPCqeRVp-r8i4gze7Nk&nis=12&uk=1717582033084">Read
+                        More</a>
+                </div>
+            </div>
+
+            <!-- box3------- -->
+            <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="img/findjob4.jpg" alt="system analyst">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <p class="blog-title">"Insights from the System Analyst: Navigating Digital Solutions"</p>
+                    <p>Explore how System Analysts serve as the bridge between technological innovation and business
+                        objectives, meticulously analyzing requirements and orchestrating the seamless integration of
+                        software systems. Join us as we shine a spotlight</p>
+                    <a href="https://www.computerscience.org/careers/systems-analyst/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <p>&copy; 2024 IT Consulting Services. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
